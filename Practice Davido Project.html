@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discovering Davido</title>
+    <style>
+      body {
+        background-image: url(https://upload.wikimedia.org/wikipedia/en/f/fa/Davido_-_Timeless_album_cover.jpg);
+        color: azure;
+        font-style: bold;
+        font: 200;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 55px;
+      }
+      h2 {
+        text-align: center;
+      }
+      a {
+        color: black;
+      }
+      a {
+        color: azure;
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: inline;
+        margin: 0 15px;
+        color: black;
+        font-size: 25px;
+      }
+      button {
+        background-color: aquamarine;
+        padding: 15px;
+        border: 0;
+        border-radius: 10px;
+        transition: all 100ms linear ease-in-out;
+        margin: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background-color: rgb(43, 57, 132);
+        padding: 10px;
+        border: 0;
+        border-radius: 10px;
+        transition: all 100ms linear ease-in-out;
+      }
+      p {
+        padding: 10px;
+        text-align: center;
+      }
+      img {
+        border-radius: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Timeless Night With Davido</h1>
+    <ul>
+      <li>
+        <button>
+          <a href="https://www.iamdavido.com/about/">About</a>
+        </button>
+      </li>
+      <li>
+        <button>
+          <a href="https://www.iamdavido.com/news/">News</a>
+        </button>
+      </li>
+      <li>
+        <button>
+          <a href="https://www.iamdavido.com/music/">Music</a>
+        </button>
+      </li>
+      <li>
+        <button>
+          <a href="https://www.iamdavido.com/videos/">Videos</a>
+        </button>
+      </li>
+    </ul>
+    <img
+      src="https://www.yourstru.ly/wp-content/uploads/2023/03/2023-03-26_10_davido-thanks-fans-fo.jpg"
+      width="300"
+    />
+    <p>
+      Timeless is the upcoming fourth studio album by Nigerian singer Davido. It
+      is scheduled to be released on March 31, 2023, through Davido Music
+      Worldwide, Columbia Records, and Sony Music Entertainment. The
+      Focalistic-assisted track "Champion Sound" was released on November 19,
+      2021, as the album's lead single.
+      <br />
+      <button class="subscribe-button">Subscribe</button><br />
+      <br />
+      This page was made by Brooke Moore<br />
+    </p>
+  </body>
+  <script>
+    function subscribe() {
+      let Name = prompt("What is your first name?");
+      let heading = document.querySelector("h1");
+      heading.innerHTML = "Hi " + Name + ",thank you for subscribing! &#128516";
+    }
+    let subscribeButton = document.querySelector(".subscribe-button");
+    subscribeButton.addEventListener("click", subscribe);
+  </script>
+</html>
